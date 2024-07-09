@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Let's Count!
+    </h1>
+    <h2>
+      Current Count: 0
+    </h2>
+    <button>
+      Add
+    </button>
+    <label
+      for="usr"
+    >
+      Username
+    </label>
+    <input
+      id="usr"
+      placeholder="username"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -14,3 +14,12 @@ it("should match snapshot", () => {
     const { asFragment } = render(<Dog name="Rusty" isAdopted={false} />)
     expect(asFragment()).toMatchSnapshot()
 });
+
+it("should show is adopted", () => {
+    const { getByText } = render(<Dog name="Harriet" isAdopted={true} />)
+    expect(getByText('Harriet has been adopted!', {exact: false})).toBeInTheDocument()
+})
+it("should show is adopted", () => {
+    const { getByText } = render(<Dog name="Harriet" isAdopted={false} />)
+    expect(getByText('Adopt me!', {exact: false})).toBeInTheDocument()
+})
